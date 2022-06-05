@@ -4,7 +4,7 @@ class CircleCalculator:
     '''
         Calculate the measurements of a circle,
         based on the input of one known value for one of the following:
-        
+          
         Radius
         Circumference 
         Area
@@ -12,6 +12,11 @@ class CircleCalculator:
 
     '''
     def __init__(self, value, calc_by) -> None:
+
+        '''
+            :value:  - float
+            :calc_by:  - str "Radius", "Circumference", "Area" or "Diameter"
+        '''
         
         if calc_by == "Radius":
             self.radius = value
